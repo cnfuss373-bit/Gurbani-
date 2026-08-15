@@ -17,23 +17,24 @@
             font-family: 'Khand', sans-serif;
         }
 
+        /* Body ka background transparent kar diya hai taaki piche extra blue box na aaye */
         body {
-            background-color: transparent; /* Background transparent kar diya hai */
-            padding: 60px 20px;
+            background-color: transparent; 
+            padding: 20px;
         }
 
-        /* Container se Blue Background, Border aur Shadow hata di hai */
+        /* Sirf ye ticker bar ki patti dikhegi */
         .premium-ticker-bar {
             width: 100%;
             max-width: 1400px;
             margin: 0 auto;
-            background: transparent !important; 
+            background: #06122b; /* Yeh aapki main patti ka color hai jo rahega */
             display: flex;
             align-items: stretch;
             height: 60px;
-            border-radius: 0; 
-            border: none;
-            box-shadow: none;
+            border-radius: 12px; 
+            border: 1px solid rgba(255, 204, 0, 0.5); 
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
             overflow: hidden;
         }
 
@@ -64,7 +65,7 @@
             animation: pulse 1.5s infinite;
         }
 
-        /* Branding Text (Iska background bhi transparent kar diya hai) */
+        /* Branding Text */
         .brand-section {
             display: flex;
             align-items: center;
@@ -74,8 +75,8 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border-right: none;
-            background: transparent;
+            border-right: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(0, 0, 0, 0.2);
         }
 
         /* Marquee/Ticker Area */
@@ -85,13 +86,12 @@
             display: flex;
             align-items: center;
             position: relative;
-            background: transparent;
         }
 
         .scroll-text {
             display: inline-block;
             white-space: nowrap;
-            color: #ffffff;
+            color: #e2e8f0;
             font-size: 1.35rem;
             font-weight: 500;
             letter-spacing: 0.8px;
