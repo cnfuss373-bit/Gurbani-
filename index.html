@@ -17,23 +17,23 @@
             font-family: 'Khand', sans-serif;
         }
 
-        /* Body ka background transparent kar diya hai taaki piche extra blue box na aaye */
+        /* Body transparent rahegi taaki piche koi extra box na aaye */
         body {
             background-color: transparent; 
             padding: 20px;
         }
 
-        /* Sirf ye ticker bar ki patti dikhegi */
+        /* Yeh rahi aapki main patti (Ticker Bar) */
         .premium-ticker-bar {
             width: 100%;
             max-width: 1400px;
             margin: 0 auto;
-            background: #06122b; /* Yeh aapki main patti ka color hai jo rahega */
+            background: #06122b !important; /* Proper Dark Blue Background */
             display: flex;
             align-items: stretch;
             height: 60px;
             border-radius: 12px; 
-            border: 1px solid rgba(255, 204, 0, 0.5); 
+            border: 1px solid rgba(255, 204, 0, 0.5); /* Clear Gold Border */
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
             overflow: hidden;
         }
@@ -51,6 +51,7 @@
             position: relative;
             clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
             padding-right: 45px;
+            flex-shrink: 0;
         }
 
         .live-section::after {
@@ -77,6 +78,7 @@
             letter-spacing: 1px;
             border-right: 1px solid rgba(255, 255, 255, 0.15);
             background: rgba(0, 0, 0, 0.2);
+            flex-shrink: 0;
         }
 
         /* Marquee/Ticker Area */
@@ -127,6 +129,7 @@
             font-weight: 700;
             clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
             padding-left: 40px;
+            flex-shrink: 0;
         }
 
         /* Keyframes Animations */
